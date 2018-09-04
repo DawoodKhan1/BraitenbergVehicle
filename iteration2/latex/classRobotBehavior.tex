@@ -1,0 +1,62 @@
+\hypertarget{classRobotBehavior}{}\section{Robot\+Behavior Class Reference}
+\label{classRobotBehavior}\index{Robot\+Behavior@{Robot\+Behavior}}
+
+
+Class representing a parent class for robot behavior.  
+
+
+
+
+{\ttfamily \#include $<$robot\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+Behavior\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structWheelVelocity}{Wheel\+Velocity} \hyperlink{classRobotBehavior_a4236ef7b0af775296b8acd33de7198d2}{process\+Reading} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} double left\+Reading, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} double right\+Reading)
+\begin{DoxyCompactList}\small\item\em Processes the reading and then returns a \hyperlink{structWheelVelocity}{Wheel\+Velocity} object based on the readings and behavior. \end{DoxyCompactList}\item 
+void {\bfseries set\+\_\+light\+\_\+max\+\_\+reading} (double light\+Max\+Reading)\hypertarget{classRobotBehavior_a830ad34642e167aa7bdcf16d8bd5adb3}{}\label{classRobotBehavior_a830ad34642e167aa7bdcf16d8bd5adb3}
+
+\item 
+double {\bfseries get\+\_\+light\+\_\+max\+\_\+reading} ()\hypertarget{classRobotBehavior_ac5231ab13c2a70da08de0fc714009014}{}\label{classRobotBehavior_ac5231ab13c2a70da08de0fc714009014}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries light\+\_\+max\+\_\+reading\+\_\+} = 60.\+0\hypertarget{classRobotBehavior_aeb06a328f9a21a93ebd3dba5d60ff2aa}{}\label{classRobotBehavior_aeb06a328f9a21a93ebd3dba5d60ff2aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a parent class for robot behavior. 
+
+\subsection{Member Function Documentation}
+\index{Robot\+Behavior@{Robot\+Behavior}!process\+Reading@{process\+Reading}}
+\index{process\+Reading@{process\+Reading}!Robot\+Behavior@{Robot\+Behavior}}
+\subsubsection[{\texorpdfstring{process\+Reading(\+\_\+\+\_\+unused double left\+Reading, \+\_\+\+\_\+unused double right\+Reading)}{processReading(__unused double leftReading, __unused double rightReading)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Wheel\+Velocity} Robot\+Behavior\+::process\+Reading (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} double}]{left\+Reading, }
+\item[{{\bf \+\_\+\+\_\+unused} double}]{right\+Reading}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classRobotBehavior_a4236ef7b0af775296b8acd33de7198d2}{}\label{classRobotBehavior_a4236ef7b0af775296b8acd33de7198d2}
+
+
+Processes the reading and then returns a \hyperlink{structWheelVelocity}{Wheel\+Velocity} object based on the readings and behavior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Reading} & reading from left sensor \\
+\hline
+{\em right\+Reading} & reading from right sensor \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{robot__behavior_8h}{robot\+\_\+behavior.\+h}\end{DoxyCompactItemize}

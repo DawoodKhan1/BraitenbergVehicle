@@ -1,0 +1,114 @@
+\hypertarget{classSensor}{}\section{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+Parent Class representing a generic sensor of the robot.  
+
+
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:
+% FIG 0
+
+
+Collaboration diagram for Sensor\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Sensor} (double robot\+Radius)\hypertarget{classSensor_af302d96726e254b6df62817b88918da0}{}\label{classSensor_af302d96726e254b6df62817b88918da0}
+
+\item 
+{\bfseries Sensor} (const \hyperlink{classSensor}{Sensor} \&other)=default\hypertarget{classSensor_adbc07ea8f9861435f8e1d21b1078bd96}{}\label{classSensor_adbc07ea8f9861435f8e1d21b1078bd96}
+
+\item 
+\hyperlink{classSensor}{Sensor} \& {\bfseries operator=} (const \hyperlink{classSensor}{Sensor} \&other)=default\hypertarget{classSensor_a48b21cd29fa3f183a2fb9e6447de2219}{}\label{classSensor_a48b21cd29fa3f183a2fb9e6447de2219}
+
+\item 
+void \hyperlink{classSensor_ae7142e59234c594e21de26467733a279}{Reset} ()\hypertarget{classSensor_ae7142e59234c594e21de26467733a279}{}\label{classSensor_ae7142e59234c594e21de26467733a279}
+
+\begin{DoxyCompactList}\small\item\em Resets sensor to all the initial values. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classSensor_afe05b95ae525d3b6b5fcce0b75739d70}{Notify} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} \hyperlink{structPose}{Pose} position)\hypertarget{classSensor_afe05b95ae525d3b6b5fcce0b75739d70}{}\label{classSensor_afe05b95ae525d3b6b5fcce0b75739d70}
+
+\begin{DoxyCompactList}\small\item\em Update reading based on distance and formula. \end{DoxyCompactList}\item 
+void {\bfseries set\+Sensor\+Position\+Based\+On\+Robot\+Position} (\hyperlink{structPose}{Pose} robot\+Position)\hypertarget{classSensor_adc2189cfa7e36e0c59479281443dfa03}{}\label{classSensor_adc2189cfa7e36e0c59479281443dfa03}
+
+\item 
+void {\bfseries set\+\_\+color} (Rgb\+Color\+Enum color)\hypertarget{classSensor_a92664d168b1da8f75701c56953954150}{}\label{classSensor_a92664d168b1da8f75701c56953954150}
+
+\item 
+void {\bfseries set\+\_\+color} (\hyperlink{structRgbColor}{Rgb\+Color} color)\hypertarget{classSensor_af89278d0fd4ec8ebbcfbe2d70709dda3}{}\label{classSensor_af89278d0fd4ec8ebbcfbe2d70709dda3}
+
+\item 
+\hyperlink{structRgbColor}{Rgb\+Color} {\bfseries get\+\_\+color} ()\hypertarget{classSensor_a32cdb478a4b0a8756e6b64dcc19d0f44}{}\label{classSensor_a32cdb478a4b0a8756e6b64dcc19d0f44}
+
+\item 
+\hyperlink{structPose}{Pose} {\bfseries get\+\_\+position} ()\hypertarget{classSensor_ab4b069b6604c7ca78768eb2e7641cfec}{}\label{classSensor_ab4b069b6604c7ca78768eb2e7641cfec}
+
+\item 
+void {\bfseries set\+\_\+position} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} \hyperlink{structPose}{Pose} position)\hypertarget{classSensor_a8f63f096c5b15dfc7e047198b00b98dc}{}\label{classSensor_a8f63f096c5b15dfc7e047198b00b98dc}
+
+\item 
+void {\bfseries set\+\_\+reading} (double r)\hypertarget{classSensor_a3a58b2a35eee78207178405ce0059ec1}{}\label{classSensor_a3a58b2a35eee78207178405ce0059ec1}
+
+\item 
+double {\bfseries get\+\_\+reading} ()\hypertarget{classSensor_a5276b83e9c880ef379fe9b08293e61cf}{}\label{classSensor_a5276b83e9c880ef379fe9b08293e61cf}
+
+\item 
+double {\bfseries calculate\+Distance} (\hyperlink{structPose}{Pose} position)\hypertarget{classSensor_a3937770f2eca52aeae5dc4729a67964d}{}\label{classSensor_a3937770f2eca52aeae5dc4729a67964d}
+
+\item 
+double {\bfseries get\+\_\+angle\+\_\+offset} () const \hypertarget{classSensor_a362dc3c306e44d50973ddf6a8f97bfff}{}\label{classSensor_a362dc3c306e44d50973ddf6a8f97bfff}
+
+\item 
+void {\bfseries set\+\_\+angle\+\_\+offset} (double angle\+\_\+offset)\hypertarget{classSensor_af528562ec7ea6fbc5387a790ddbc0bfa}{}\label{classSensor_af528562ec7ea6fbc5387a790ddbc0bfa}
+
+\item 
+double {\bfseries get\+\_\+radius} ()\hypertarget{classSensor_a6c2c71528658c45385e22ee97dc9b0f5}{}\label{classSensor_a6c2c71528658c45385e22ee97dc9b0f5}
+
+\item 
+void {\bfseries set\+\_\+radius} (double radius)\hypertarget{classSensor_a74578f3ec9a9c6e210789b207af2089e}{}\label{classSensor_a74578f3ec9a9c6e210789b207af2089e}
+
+\item 
+double {\bfseries get\+\_\+robot\+\_\+radius} ()\hypertarget{classSensor_afbf05731d0e64de8a98c5b15910ac827}{}\label{classSensor_afbf05731d0e64de8a98c5b15910ac827}
+
+\item 
+void {\bfseries set\+\_\+robot\+\_\+radius} (double robot\+Radius)\hypertarget{classSensor_a4e28f86507f08f3e6c5d16f16c9ff66b}{}\label{classSensor_a4e28f86507f08f3e6c5d16f16c9ff66b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRgbColor}{Rgb\+Color} {\bfseries color\+\_\+}\hypertarget{classSensor_aab3091a119c15a76244603f7dfff7ac0}{}\label{classSensor_aab3091a119c15a76244603f7dfff7ac0}
+
+\item 
+\hyperlink{structPose}{Pose} {\bfseries position\+\_\+}\hypertarget{classSensor_a60e33927ebd8275de08836c083b28e01}{}\label{classSensor_a60e33927ebd8275de08836c083b28e01}
+
+\item 
+double {\bfseries reading\+\_\+}\hypertarget{classSensor_ad71b1c465eae9ddf1da31cff1cbe3736}{}\label{classSensor_ad71b1c465eae9ddf1da31cff1cbe3736}
+
+\item 
+double {\bfseries angle\+\_\+offset\+\_\+} = A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET\hypertarget{classSensor_af1ddfd0a34c7e7e7b426e40019147b49}{}\label{classSensor_af1ddfd0a34c7e7e7b426e40019147b49}
+
+\item 
+double {\bfseries radius\+\_\+} = 3.\+0\hypertarget{classSensor_a1649a1783ee18d6e4ada55d8b5478f76}{}\label{classSensor_a1649a1783ee18d6e4ada55d8b5478f76}
+
+\item 
+double {\bfseries robot\+\_\+radius\+\_\+}\hypertarget{classSensor_a1c4575ca3e6ae73f7f024d81320d52c2}{}\label{classSensor_a1c4575ca3e6ae73f7f024d81320d52c2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent Class representing a generic sensor of the robot. 
+
+Has useful functions for reading, angle, distance, radius, robot\+\_\+radius, etc. that would be useful for all sensors. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sensor_8h}{sensor.\+h}\item 
+src/\hyperlink{sensor_8cc}{sensor.\+cc}\end{DoxyCompactItemize}

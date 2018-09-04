@@ -1,0 +1,52 @@
+\hypertarget{entity__type_8h}{}\section{src/entity\+\_\+type.h File Reference}
+\label{entity__type_8h}\index{src/entity\+\_\+type.\+h@{src/entity\+\_\+type.\+h}}
+{\ttfamily \#include \char`\"{}src/common.\+h\char`\"{}}\\*
+Include dependency graph for entity\+\_\+type.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{entity__type_8h_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type} \{ \\*
+{\bfseries k\+Robot}, 
+{\bfseries k\+Light}, 
+{\bfseries k\+Food}, 
+{\bfseries k\+Entity}, 
+\\*
+{\bfseries k\+Right\+Wall}, 
+{\bfseries k\+Left\+Wall}, 
+{\bfseries k\+Top\+Wall}, 
+{\bfseries k\+Bottom\+Wall}, 
+\\*
+{\bfseries k\+Undefined}
+ \}\begin{DoxyCompactList}\small\item\em Class representing a immobile \hyperlink{classFood}{Food} within the \hyperlink{classArena}{Arena}. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+IN} (csci3081)\hypertarget{entity__type_8h_a5eaf22d0e7e2a0f12c6a660a6b011297}{}\label{entity__type_8h_a5eaf22d0e7e2a0f12c6a660a6b011297}
+
+\item 
+{\bfseries N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+E\+ND} (csci3081)\hypertarget{entity__type_8h_a0bc8eb973c3aef52acd7429898ace1cd}{}\label{entity__type_8h_a0bc8eb973c3aef52acd7429898ace1cd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+2017 3081 Staff, All rights reserved. 
+\end{DoxyCopyright}
+
+
+\subsection{Enumeration Type Documentation}
+\index{entity\+\_\+type.\+h@{entity\+\_\+type.\+h}!Entity\+Type@{Entity\+Type}}
+\index{Entity\+Type@{Entity\+Type}!entity\+\_\+type.\+h@{entity\+\_\+type.\+h}}
+\subsubsection[{\texorpdfstring{Entity\+Type}{EntityType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Entity\+Type}}\hypertarget{entity__type_8h_ad79a57ed3105eb60d991a1aeb4a9dc44}{}\label{entity__type_8h_ad79a57ed3105eb60d991a1aeb4a9dc44}
+
+
+Class representing a immobile \hyperlink{classFood}{Food} within the \hyperlink{classArena}{Arena}. 
+
+Entity\+Type is used during Lights to determine correct behavior.
+
+For example, if a robot hits a wall or \hyperlink{classLight}{Light} then it should decrease a life. 

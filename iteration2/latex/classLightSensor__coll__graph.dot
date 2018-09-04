@@ -1,0 +1,12 @@
+digraph "LightSensor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LightSensor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Sensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSensor.html",tooltip="Parent Class representing a generic sensor of the robot. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" position_" ];
+  Node3 [label="Pose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPose.html",tooltip="A simple representation of the position/orientation of an entity within the Arena. "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" color_" ];
+  Node4 [label="RgbColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRgbColor.html",tooltip="Struct representing a rgb_color. "];
+}

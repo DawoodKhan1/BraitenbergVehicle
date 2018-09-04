@@ -1,0 +1,88 @@
+\begin{quote}
+The iteration 1 code and documentation is due on T\+U\+E\+S\+D\+AY, Mar 06 at 11\+:55pm \end{quote}
+
+
+Please copy this file into your /docs folder. Place an \textquotesingle{}x\textquotesingle{} in each of the {\ttfamily \mbox{[} \mbox{]}} boxes for items that are complete. Push this completed checklist to github. When it displays on Github, it will show an actual checkbox with a check mark.
+
+\subsubsection*{Compilation and Execution}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} I cloned {\bfseries fresh} from github onto a cselabs machine to test compilation
+\item \mbox{[}X\mbox{]} Submission is on the master branch of the my project repo \char`\"{}project-\/$<$username$>$\char`\"{}
+\item \mbox{[}X\mbox{]} \+\_\+/iteration1\+\_\+ folder exists
+\item \mbox{[}X\mbox{]} \+\_\+/build\+\_\+ is not in the repo
+\item \mbox{[}X\mbox{]} \+\_\+/html\+\_\+ is not in {\itshape docs}
+\item \mbox{[}X\mbox{]} $\ast$$\ast$\+\_\+\+\_\+{\ttfamily make} from src completes without error.\+\_\+\+\_\+$\ast$$\ast$
+\item \mbox{[}X\mbox{]} {\ttfamily ./../build/bin/arenaviewer} executes without assert or a seg fault
+\item \mbox{[}X\mbox{]} {\ttfamily cpplint.\+py $\ast$.cc} reports no errors
+\item \mbox{[}X\mbox{]} {\ttfamily cpplint.\+py -\/-\/root=.. $\ast$.h} reports no errors
+\item \mbox{[}\mbox{]} {\ttfamily doxygen Doxyfile} compiles
+\end{DoxyItemize}
+
+\subsubsection*{Primary Functionality}
+
+\begin{quote}
+To make grading easier, we ask that you provide the status of each of the requirements. Do not lie about the status!! It makes us grumpy -- you want your grader to be happy when s/he grades! We will be inspecting the code to confirm, \end{quote}
+but this status report can make it faster for us.
+
+$\ast$$\ast$\+\_\+\+\_\+\+Please place an \textquotesingle{}X\textquotesingle{} in the appropriate box for each requirement.\+\_\+\+\_\+$\ast$$\ast$
+\begin{DoxyItemize}
+\item Good = Fully Implemented. No {\itshape known} bugs. No {\itshape obvious} bugs.
+\item Okay = Works but some bugs (recorded in bug report).
+\item Help = Attempted but not working.
+\item Time = No to Little Progress
+\end{DoxyItemize}
+
+$\vert$ Functionality $\vert$ Good $\vert$ Okay $\vert$ Help $\vert$ Time $\vert$ $\vert$ -\/-\/-\/-\/-\/--- $\vert$ -\/-\/-\/-\/-\/--- $\vert$ -\/-\/-\/-\/-\/--- $\vert$ -\/-\/-\/-\/-\/--- $\vert$ -\/-\/-\/-\/-\/-\/--- $\vert$ $\vert$ $\ast$$\ast$\+\_\+\+\_\+\+Priority Level 1\+\_\+\+\_\+$\ast$$\ast$ $\vert$ $\vert$ {\itshape Enitities} are generated and placed according to the requirements $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ {\itshape Robot} adjusts wheel velocities when pressing the arrow keys $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ {\itshape Robot} stops when colliding with an object $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ {\itshape Robot} loses a life when colliding with an obstacle or wall $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ {\itshape Base} changes color when captured by {\itshape Robot} $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Game is won if robot captures all bases $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Game is lost if the robot loses all its lives $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Obvious visual indication of winning or losing game $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Game stops and waits for the user upon a win or loss $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\ast$$\ast$\+\_\+\+\_\+\+Priority Level 2\+\_\+\+\_\+$\ast$$\ast$ $\vert$ $\vert$ {\itshape Obstacles} are mobile with two same-\/speed wheels and moves straight $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ {\itshape Obstacles} move in a reverse arc for a fixed time after collision $\vert$ $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ All entities are stationary before the \char`\"{}\+Play\char`\"{} button is pushed $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Pressing the button changes button state from \char`\"{}\+Play\char`\"{} to \char`\"{}\+Pause\char`\"{} $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Pressing the button changes the game state from playing to paused (or back) $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ \char`\"{}\+New Game\char`\"{} button is available to user $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Pressing \char`\"{}\+New Game\char`\"{} begins a new game $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Number of lives remaining is depicted within the body of the robot $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\ast$$\ast$\+\_\+\+\_\+\+Priority Level 3\+\_\+\+\_\+$\ast$$\ast$ $\vert$ $\vert$ Even more obstacles $\vert$ X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ Mercy invincibility is implemented $\vert$X $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ For Fun $\vert$ $\vert$ King of the Hill is implemented $\vert$ $\vert$ $\vert$ $\vert$ X $\vert$
+
+\subsubsection*{Documentation}
+
+\begin{quote}
+Documentation should be in good {\itshape draft} form. \end{quote}
+
+
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} {\itshape U\+ML} file for the iteration 1 exists in {\itshape docs}
+\item \mbox{[}X\mbox{]} The {\itshape U\+ML} reflects the current state of the code
+\item \mbox{[} \mbox{]} {\itshape mainpage.\+h} exists in {\itshape src}
+\item \mbox{[} \mbox{]} Front page (mainpage) has a project description for programmer audience (1 to 2 pages)
+\item \mbox{[} \mbox{]} I inspected index.\+html in {\itshape docs/html} folder
+\item \mbox{[}\mbox{]} Classes are documented in the doxygen web page class list
+\item \mbox{[} \mbox{]} {\itshape Classes} list has documentation for each class, including members and methods
+\item \mbox{[} \mbox{]} I perused other classes to spot check documentation
+\item \mbox{[} \mbox{]} I commented my code where necessary
+\end{DoxyItemize}
+
+\subsubsection*{Unit Tests, Linter, and Git}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} The code passes all the unit tests W\+I\+T\+H\+O\+UT modification to the provided tests.
+\item \mbox{[}X\mbox{]} The code complies with naming conventions for classes, methods, and members.
+\item \mbox{[}X\mbox{]} There exists a history of git commit messages to show effort.
+\end{DoxyItemize}
+
+\subsubsection*{Bug\+Report}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} Bug\+Report.\+md is in the /docs folder.
+\item \mbox{[}X\mbox{]} The report includes a list of known bugs (or states \char`\"{}no known bugs\char`\"{}) for each file. \begin{quote}
+If you report {\itshape minor} bugs, you will lose few to no points for that functionality. If you try to hide some obvious bugs and not report them, you will lose all the points for that functionality. \end{quote}
+
+\end{DoxyItemize}
+
+\subsection*{Ready For Submission}
+
+When everything above is as you want it or it is 11\+:55pm on Tuesday, it is time to submit!
+
+
+\begin{DoxyItemize}
+\item \mbox{[}X\mbox{]} I pushed this file and any changes resulting from this checklist.
+\end{DoxyItemize}
+
+{\itshape One more thing -- check that what you think you pushed was really pushed to github. If you can see it, we can see it. If you can\textquotesingle{}t, we can\textquotesingle{}t.}
+
+Congratulations on your submission! 

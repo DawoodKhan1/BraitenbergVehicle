@@ -1,0 +1,75 @@
+\hypertarget{classLight}{}\section{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+
+
+Class representing an mobile \hyperlink{classLight}{Light} within the \hyperlink{classArena}{Arena}.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+
+
+Inheritance diagram for Light\+:
+% FIG 0
+
+
+Collaboration diagram for Light\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLight_aeb5df09a25a32f19fdffa761268ba24f}{Light} ()\hypertarget{classLight_aeb5df09a25a32f19fdffa761268ba24f}{}\label{classLight_aeb5df09a25a32f19fdffa761268ba24f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classLight_a49b2e32cf8173353ac4689fdadbb95d5}{get\+\_\+name} () const override\hypertarget{classLight_a49b2e32cf8173353ac4689fdadbb95d5}{}\label{classLight_a49b2e32cf8173353ac4689fdadbb95d5}
+
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classLight}{Light} for visualization purposes, and to aid in debugging. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a61485eb0684868b503e1b96e6a3206c3}{Reset} () override\hypertarget{classLight_a61485eb0684868b503e1b96e6a3206c3}{}\label{classLight_a61485eb0684868b503e1b96e6a3206c3}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classLight}{Light} to a newly constructed state (needed for reset button to work in G\+UI). \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a97934eec7489f9b072534f5e30a2d90d}{Timestep\+Update} (unsigned int dt) override
+\begin{DoxyCompactList}\small\item\em Update the Lights\textquotesingle{}s position and velocity after the specified duration has passed. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a7b8ef784bba9ec5725b0b0595e7da850}{Handle\+Collision} (\hyperlink{entity__type_8h_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type} object\+\_\+type, \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$object=N\+U\+LL)\hypertarget{classLight_a7b8ef784bba9ec5725b0b0595e7da850}{}\label{classLight_a7b8ef784bba9ec5725b0b0595e7da850}
+
+\begin{DoxyCompactList}\small\item\em Handles the collision by setting the sensor to activated. \end{DoxyCompactList}\item 
+double {\bfseries get\+\_\+time} () const \hypertarget{classLight_a8715f4e6099886efcc8445a15238bc5d}{}\label{classLight_a8715f4e6099886efcc8445a15238bc5d}
+
+\item 
+void {\bfseries set\+\_\+time} (double time)\hypertarget{classLight_a89407e87b4f9d1ae7424c223a1c05268}{}\label{classLight_a89407e87b4f9d1ae7424c223a1c05268}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing an mobile \hyperlink{classLight}{Light} within the \hyperlink{classArena}{Arena}. 
+
+\hyperlink{classArena}{Arena} sets the time and calls methods of this class upon timesteps and collisions.
+
+Lights move and upon any collisions reverse in an arc determined by flags and timing of the simulation. 
+
+\subsection{Member Function Documentation}
+\index{Light@{Light}!Timestep\+Update@{Timestep\+Update}}
+\index{Timestep\+Update@{Timestep\+Update}!Light@{Light}}
+\subsubsection[{\texorpdfstring{Timestep\+Update(unsigned int dt) override}{TimestepUpdate(unsigned int dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::\+Timestep\+Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classLight_a97934eec7489f9b072534f5e30a2d90d}{}\label{classLight_a97934eec7489f9b072534f5e30a2d90d}
+
+
+Update the Lights\textquotesingle{}s position and velocity after the specified duration has passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The \# of timesteps that have elapsed since the last update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/light.\+h\item 
+src/light.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{classRobot}{}\section{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+Class representing a robot within the arena.  
+
+
+
+
+{\ttfamily \#include $<$robot.\+h$>$}
+
+
+
+Inheritance diagram for Robot\+:
+% FIG 0
+
+
+Collaboration diagram for Robot\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{Robot} ()\hypertarget{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{}\label{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}
+
+\begin{DoxyCompactList}\small\item\em Constructor using initialization values from \hyperlink{params_8h}{params.\+h}. \end{DoxyCompactList}\item 
+{\bfseries Robot} (const \hyperlink{classRobot}{Robot} \&other)=default\hypertarget{classRobot_a87ee951bb2c663a8bb427fdd2928a934}{}\label{classRobot_a87ee951bb2c663a8bb427fdd2928a934}
+
+\item 
+\hyperlink{classRobot}{Robot} \& {\bfseries operator=} (const \hyperlink{classRobot}{Robot} \&other)=default\hypertarget{classRobot_a69f171c4965ac4523cd95e2191405d37}{}\label{classRobot_a69f171c4965ac4523cd95e2191405d37}
+
+\item 
+void \hyperlink{classRobot_af597fd14927d2cd5308ded62f4e54e29}{Reset} () override\hypertarget{classRobot_af597fd14927d2cd5308ded62f4e54e29}{}\label{classRobot_af597fd14927d2cd5308ded62f4e54e29}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classRobot}{Robot} to a newly constructed state (needed for reset button to work in G\+UI). \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_ae790462f8782efcfd26082eedec30ed5}{Timestep\+Update} (unsigned int dt) override
+\begin{DoxyCompactList}\small\item\em Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a176a9958cc2ea1e585ddb2cdc82c0bdb}{Handle\+Collision} (\hyperlink{entity__type_8h_ad79a57ed3105eb60d991a1aeb4a9dc44}{Entity\+Type} object\+\_\+type, \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$object=N\+U\+LL)\hypertarget{classRobot_a176a9958cc2ea1e585ddb2cdc82c0bdb}{}\label{classRobot_a176a9958cc2ea1e585ddb2cdc82c0bdb}
+
+\begin{DoxyCompactList}\small\item\em Handles the collision by setting the sensor to activated. Also sets invincibility to true and records the current time. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classRobot_a3f77c13705b8f60480d21d8d936dc39e}{get\+\_\+name} () const override\hypertarget{classRobot_a3f77c13705b8f60480d21d8d936dc39e}{}\label{classRobot_a3f77c13705b8f60480d21d8d936dc39e}
+
+\begin{DoxyCompactList}\small\item\em Get the behavior of the \hyperlink{classRobot}{Robot} for visualization and for debugging. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_ae4647cccd002ca13659017e634237ead}{Increase\+Speed} ()\hypertarget{classRobot_ae4647cccd002ca13659017e634237ead}{}\label{classRobot_ae4647cccd002ca13659017e634237ead}
+
+\begin{DoxyCompactList}\small\item\em Command that comes from the controller, then is passed to handler. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a94afa6f63eb22667261c07933faae481}{Decrease\+Speed} ()\hypertarget{classRobot_a94afa6f63eb22667261c07933faae481}{}\label{classRobot_a94afa6f63eb22667261c07933faae481}
+
+\begin{DoxyCompactList}\small\item\em Command that comes from the controller, then is passed to handler. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_a12b5883779f682c66e71bc54b6539694}{Turn\+Right} ()\hypertarget{classRobot_a12b5883779f682c66e71bc54b6539694}{}\label{classRobot_a12b5883779f682c66e71bc54b6539694}
+
+\begin{DoxyCompactList}\small\item\em Command that comes from the controller, then is passed to handler. \end{DoxyCompactList}\item 
+void \hyperlink{classRobot_ad864d21d997dbadf55f997c2f0143d41}{Turn\+Left} ()\hypertarget{classRobot_ad864d21d997dbadf55f997c2f0143d41}{}\label{classRobot_ad864d21d997dbadf55f997c2f0143d41}
+
+\begin{DoxyCompactList}\small\item\em Command that comes from the controller, then is passed to handler. \end{DoxyCompactList}\item 
+\hyperlink{classMotionHandlerRobot}{Motion\+Handler\+Robot} \hyperlink{classRobot_a923046846778386058ac43f7a3d56310}{get\+\_\+motion\+\_\+handler} () const \hypertarget{classRobot_a923046846778386058ac43f7a3d56310}{}\label{classRobot_a923046846778386058ac43f7a3d56310}
+
+\begin{DoxyCompactList}\small\item\em Getter for motion\+\_\+handler\+\_\+. \end{DoxyCompactList}\item 
+\hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} \hyperlink{classRobot_a47029edd6cf8ccf3654dc16290710841}{get\+\_\+motion\+\_\+behavior} () const \hypertarget{classRobot_a47029edd6cf8ccf3654dc16290710841}{}\label{classRobot_a47029edd6cf8ccf3654dc16290710841}
+
+\begin{DoxyCompactList}\small\item\em Getter for motion\+\_\+behavior\+\_\+. \end{DoxyCompactList}\item 
+\hyperlink{classLightSensor}{Light\+Sensor} $\ast$ {\bfseries get\+\_\+left\+\_\+lightsensor} () const \hypertarget{classRobot_a002715d00e8db745fdb6306be4a9c5aa}{}\label{classRobot_a002715d00e8db745fdb6306be4a9c5aa}
+
+\item 
+\hyperlink{classLightSensor}{Light\+Sensor} $\ast$ {\bfseries get\+\_\+right\+\_\+lightsensor} () const \hypertarget{classRobot_ad38f90be16c81c98017dfe5f93a8ee9f}{}\label{classRobot_ad38f90be16c81c98017dfe5f93a8ee9f}
+
+\item 
+\hyperlink{classFoodSensor}{Food\+Sensor} $\ast$ {\bfseries get\+\_\+left\+\_\+foodsensor} () const \hypertarget{classRobot_a1dc4adb34232a53e49cb3a0e975c00c0}{}\label{classRobot_a1dc4adb34232a53e49cb3a0e975c00c0}
+
+\item 
+\hyperlink{classFoodSensor}{Food\+Sensor} $\ast$ {\bfseries get\+\_\+right\+\_\+foodsensor} () const \hypertarget{classRobot_aeefc18dc2d837b56fd434b02d0023b4f}{}\label{classRobot_aeefc18dc2d837b56fd434b02d0023b4f}
+
+\item 
+\hyperlink{robot__type_8h_a78d284d08fd22d809fd436256f2cbc39}{Robot\+Type} {\bfseries get\+\_\+robot\+\_\+type} () const \hypertarget{classRobot_a3cf136e22296d3c420eb957f21662efc}{}\label{classRobot_a3cf136e22296d3c420eb957f21662efc}
+
+\item 
+void {\bfseries set\+\_\+robot\+\_\+type} (\hyperlink{robot__type_8h_a78d284d08fd22d809fd436256f2cbc39}{Robot\+Type} robot\+Type)\hypertarget{classRobot_a67f2eb521aa214a45ee5aa650898aa46}{}\label{classRobot_a67f2eb521aa214a45ee5aa650898aa46}
+
+\item 
+\hyperlink{classRobotBehavior}{Robot\+Behavior} $\ast$ {\bfseries get\+\_\+robot\+\_\+behavior} () const \hypertarget{classRobot_a5f6e19514c4829c4a7acce6504c24538}{}\label{classRobot_a5f6e19514c4829c4a7acce6504c24538}
+
+\item 
+void {\bfseries set\+\_\+robot\+\_\+behavior} (\hyperlink{classRobotBehavior}{Robot\+Behavior} $\ast$robot\+Behavior)\hypertarget{classRobot_a5d1955c04553deb31626aae8b49c59f0}{}\label{classRobot_a5d1955c04553deb31626aae8b49c59f0}
+
+\item 
+bool {\bfseries get\+\_\+hungry} () const \hypertarget{classRobot_a4f0c30fa0d822156a8ba5667ecef683e}{}\label{classRobot_a4f0c30fa0d822156a8ba5667ecef683e}
+
+\item 
+void {\bfseries set\+\_\+hungry} (bool hungry)\hypertarget{classRobot_aa7f0ec7fd205f7513198c365b928cdbf}{}\label{classRobot_aa7f0ec7fd205f7513198c365b928cdbf}
+
+\item 
+bool {\bfseries get\+\_\+starving} () const \hypertarget{classRobot_a4e5d44615bb26659cdef5e5d9b4980c2}{}\label{classRobot_a4e5d44615bb26659cdef5e5d9b4980c2}
+
+\item 
+void {\bfseries set\+\_\+starving} (bool starving)\hypertarget{classRobot_a9a265a4e223005cefd02fa9ee0ac3f62}{}\label{classRobot_a9a265a4e223005cefd02fa9ee0ac3f62}
+
+\item 
+bool {\bfseries get\+\_\+starved} () const \hypertarget{classRobot_a2124f58329b1573b2d6d663ca85cc1c5}{}\label{classRobot_a2124f58329b1573b2d6d663ca85cc1c5}
+
+\item 
+void {\bfseries set\+\_\+starved} (bool starved)\hypertarget{classRobot_a363b48fd2e0d48696b6ec9b9e76a4761}{}\label{classRobot_a363b48fd2e0d48696b6ec9b9e76a4761}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing a robot within the arena. 
+
+Robots are composed of a motion handler, motion behavior, and touch sensor. These classes interact to maintain the pose (position and heading) of the robot. At each time step, the wheel velocities are used to calculate the next pose of the robot. The handler manages the pose and user requests. The behavior calculates the new pose Foodd on wheel velocities.
+
+The touch sensor is activated when the robot collides with an object. The heading is modified after a collision to move the robot away from the other object.
+
+Robots reverse after colliding with another robot or the wall by reversing in an arc and then incrementing the heading angle to avoid future collisions.
+
+Robots have 4 sensors, 2 light and 2 food sensors. These sensors are on the left and right of the robot and always has a reading.
+
+Based on the robot\textquotesingle{}s behavior, some of these readings are used and others are ignored. Ex. If robott is not hungry, food sensor readings are ignored. 
+
+\subsection{Member Function Documentation}
+\index{Robot@{Robot}!Timestep\+Update@{Timestep\+Update}}
+\index{Timestep\+Update@{Timestep\+Update}!Robot@{Robot}}
+\subsubsection[{\texorpdfstring{Timestep\+Update(unsigned int dt) override}{TimestepUpdate(unsigned int dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\+::\+Timestep\+Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classRobot_ae790462f8782efcfd26082eedec30ed5}{}\label{classRobot_ae790462f8782efcfd26082eedec30ed5}
+
+
+Update the \hyperlink{classRobot}{Robot}\textquotesingle{}s position and velocity after the specified duration has passed. 
+
+This function also checks for when the invincibility expires and when it does it sets invincibility to false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The \# of timesteps that have elapsed since the last update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{robot_8h}{robot.\+h}\item 
+src/\hyperlink{robot_8cc}{robot.\+cc}\end{DoxyCompactItemize}
